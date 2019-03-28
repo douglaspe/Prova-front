@@ -1,0 +1,41 @@
+{
+  "name": "provafront",
+  "version": "1.0.0",
+  "description": "Montar o layout da página usando como base o arquivo layout.jpg. Listar os dados da API do Vagalume utilizando o endpoint no arquivo API.txt. Exibir os registros na página conforme o layout.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "test": "mocha tests/**/*.spec.js",
+    "start": "./node_modules/.bin/webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglaspe/prova-front.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Douglas Pereira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/douglaspe/prova-front/issues"
+  },
+  "homepage": "https://github.com/douglaspe/prova-front#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {}
+}
