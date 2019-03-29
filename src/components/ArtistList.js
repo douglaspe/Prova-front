@@ -5,11 +5,9 @@ function createMarkup(data) {
   return data.map((artist, index) => `
   <article>
     <a href="${artist.url}">
-        <img class="img-artist" src="${artist.pic_medium}" alt="Card cap" />
-        <img class="img-play" src="../assets/images/play.png" alt="Card cap" />
-      <div class="title">
-        <h5>"${artist.name}"</h5>
-      </div>
+      <img class="img-artist" src="${artist.pic_medium}" alt="Card cap" />
+      <img class="img-play img-fluid" src="../assets/images/play.png" alt="Card cap" />
+      <h5 id=${`artist`+index}>${artist.name}</h5>
     </a>
     <div class="subtitle">
       Road Trippin
@@ -22,7 +20,6 @@ function renderArtists(data, element) {
 
   element.innerHTML = markup;
 }
-
 
 export default function fetchArtists(element) {
   axios.get(API_URL)
