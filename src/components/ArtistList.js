@@ -5,9 +5,9 @@ function createMarkup(data) {
   return data.map((artist, index) => `
   <article>
     <a href="${artist.url}">
-      <img class="img-artist" src="${artist.pic_medium}" alt="Card cap" />
-      <img class="img-play img-fluid" src="../assets/images/play.png" alt="Card cap" />
-      <h5 id=${`artist`+index}>${artist.name}</h5>
+      <img class="img-artist" src="${artist.pic_medium}" alt='artist ${artist.name}' />
+      <img class="img-play img-fluid" src="../assets/images/play.png" alt="Imagem do Play" />
+      <h5 id='artist${index}'>${artist.name}</h5>
     </a>
     <div class="subtitle">
       Road Trippin
