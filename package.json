@@ -4,6 +4,7 @@
   "description": "Montar o layout da página usando como base o arquivo layout.jpg. Listar os dados da API do Vagalume utilizando o endpoint no arquivo API.txt. Exibir os registros na página conforme o layout.",
   "main": "index.js",
   "scripts": {
+    "build": "./node_modules/.bin/webpack --mode=production --colors --progress",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "build-css": "node-sass src/scss/style.scss public/assets/css/style.min.css --output-style compressed",
